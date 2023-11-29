@@ -1,0 +1,15 @@
+app:
+  name: bastianpaetzold-poi-gateway-app
+  namespace: bastianpaetzold
+  cluster: .apps.rosa-m9x67.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-lab/bastianpaetzold-gateway
+  org: rhdh23-lab
+  name: bastianpaetzold-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: bastianpaetzold/poi-gateway-app
+  tag: latest
